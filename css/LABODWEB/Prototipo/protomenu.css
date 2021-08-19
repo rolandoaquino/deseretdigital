@@ -1,0 +1,183 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    background-color: blue;
+    height: 80px;
+    margin-top: 220px;
+    border-radius: 10px;
+}
+
+.menu li{
+    float: left;
+    background-color:black;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 21px;
+    margin-inline: 10px;
+    width: 250px;
+    border-right: 0px solid white;
+    text-align: center;
+
+    
+}
+
+.menu li a {
+    color:white;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color:#1e33f0de;
+    cursor: pointer;
+}
+
+.menu li:hover .sub-menu{
+    display: block;
+}
+
+.menu .li-submenu:hover{
+    padding-bottom: 0;
+}
+
+.sub-menu{
+    list-style: none;
+    display: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: -35px;
+    text-align: left;
+}
+
+.sub-menu li {
+    clear: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.sub-menu li:hover{
+    background-color:#1e33f0de;
+    font-weight: bold;
+}
+
+.li-submenu:hover{
+    padding-bottom: 0;
+}
+
+/* ---------------BARRA DE BUSQUEDA---------------- */
+
+@import "compass/css3";
+
+/***********************
+ * Essential Structure *
+ ***********************/
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 75%;
+  padding-bottom: 50px;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+.flexsearch {
+  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+}
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+ 	height: 60px;
+  padding: 0 46px 0 10px;
+	border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
+	border-width: 5px;
+  margin-top: 3px;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+	font-size: 26px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+	
+.flexsearch--submit {
+  position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+  padding: 0;
+  border: none;
+	margin-top: 20px; /* margin-top + border-width */
+  margin-right: 5px; /* border-width */
+	background: transparent;
+  color: #888;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #333; 
+}
+
+.flexsearch--submit:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+
+
+/****************
+ * Pretify demo *
+ ****************/
+.h1 {
+  float: left;
+  margin: 25px;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+}
+
